@@ -142,7 +142,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: Tiny5, sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -523,6 +523,9 @@ video {
 .m-2 {
   margin: 0.5rem;
 }
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
 .block {
   display: block;
 }
@@ -562,8 +565,14 @@ video {
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .resize {
   resize: both;
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-center {
   align-items: center;
@@ -574,6 +583,29 @@ video {
 .border {
   border-width: 1px;
 }
+.border-2 {
+  border-width: 2px;
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -582,10 +614,49 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/PixelifySans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/PixelifySans-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/PixelifySans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/PixelifySans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tiny5';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Tiny5-Regular.ttf') format('truetype');
+}
+
 html,
 body {
   height: 100%;
   overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .bg-dark {
@@ -594,5 +665,19 @@ body {
 
 .bg-light {
   background-color: #20549a;
+}
+
+.button-shadow {
+  box-shadow: 4px 4px 0 #fff;
+}
+
+.button-shadow:hover {
+  transform: translate(2px,2px);
+  box-shadow: 2px 2px 0 #fff;
+}
+
+.button-shadow:active {
+  transform: translate(4px,4px);
+  box-shadow: 0px 0px 0 #fff;
 }
 
