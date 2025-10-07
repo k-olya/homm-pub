@@ -1,0 +1,26 @@
+- id: warlord
+  name: Военачальник
+  description: Военачальник получает большой бонус к атаке и защите, но имеет низкие магические характеристики
+  stats:
+    attack: 9
+    defense: 7
+    power: 3
+    knowledge: 2
+
+- id: sorceress
+  name: Звездная волшебница
+  description: Волшебница использует мощнейшие заклинания, но уязвима в ближнем бою
+  stats:
+    attack: 3
+    defense: 4
+    power: 8
+    knowledge: 7
+
+- id: ranger
+  name: Быстроногий рейнджер
+  description: Рейнджер не может похвастаться сильной атакой, но в его распоряжении большое количество поддерживающих и усиливающих заклинаний
+  stats:
+    attack: 5
+    defense: 6
+    power: 2
+    knowledge: 3

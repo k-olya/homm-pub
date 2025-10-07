@@ -1,0 +1,36 @@
+- id: attack
+  name: Атака
+  description: Повышает силу физической атаки
+  sprite: attack-stat
+
+- id: defense
+  name: Защита
+  description: Дает защиту от физической атаки
+  sprite: defense-stat
+
+- id: power
+  name: Магия
+  description: Увеличивает мощность заклинаний
+  sprite: power-stat
+
+- id: knowledge
+  name: Знания
+  description: Позволяет использовать больше заклинаний
+  sprite: knowledge-stat
+
+- id: gold
+  name: Золото
+  description: Ресурс. Используется для покупки предметов
+
+- id: wood
+  name: Дерево
+  description: Ресурс. Используется для строительства
+
+- id: iron
+  name: Железо
+  description: Ресурс. Используется для ковки снаряжения
+
+- id: stone
+  name: Камень
+  description: Ресурс. Используется для строительства
+  sprite: stone-resource

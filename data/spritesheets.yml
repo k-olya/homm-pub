@@ -1,0 +1,31 @@
+- filename: kael.webp
+  sprites:
+    - id: kael-portrait
+
+- filename: nyssa.webp
+  sprites:
+    - id: nyssa-portrait
+
+- filename: jorin.webp
+  sprites:
+    - id: jorin-portrait
+
+- filename: sword.webp
+  sprites:
+    - id: attack-stat
+
+- filename: shield.webp
+  sprites:
+    - id: defense-stat
+
+- filename: power.webp
+  sprites:
+    - id: power-stat
+
+- filename: crest.webp
+  sprites:
+    - id: knowledge-stat
+
+- filename: stone.webp
+  sprites:
+    - id: stone-resource
